@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/overlays.css">
     <link rel="stylesheet" href="styles/configuration.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <script src="player_config.js" defer></script>
 </head>
 <body>
     <div id="backdrop"></div>
@@ -27,8 +29,8 @@
                     <input type="text" name="username" id="playername"/>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-alt">Cancel</button>
-                    <button type="submit" class="btn">Confirm</button>
+                    <button type="button" id="btn-cancel" class="btn btn-alt">Cancel</button>
+                    <button type="submit" class="btn" id="btn-confirm">Confirm</button>
                 </div>
             </form>
         </aside>
@@ -39,7 +41,7 @@
                         <h2>Player 1</h2>
                         <h3>Player NAME</h3>
                         <p class="player-symbol">X</p>
-                        <button class="btn btn-alt">Edit</button>
+                        <button id="btn-player1" class="btn btn-alt">Edit</button>
                     </article>
                 </li>
                 <li>
@@ -47,7 +49,7 @@
                         <h2>Player 2</h2>
                         <h3>Player NAME</h3>
                         <p class="player-symbol">O</p>
-                        <button class="btn btn-alt">Edit</button>
+                        <button id="btn-player2" class="btn btn-alt">Edit</button>
                     </article>
                 </li>
             </ol>

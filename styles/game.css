@@ -1,0 +1,33 @@
+#active-game {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#active-game ol {
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem;
+    grid-template-rows: 4rem 4rem 4rem;
+    list-style: none;
+    gap: 0.5rem;
+    
+   }
+
+#active-game ol li {
+    background-color: purple;
+    
+}
+
+#active-game ol li:hover {
+    background-color: aqua;
+}
+
+#active-game p {
+    margin-bottom: 0;
+}
+
+#active-player-name {
+color: rgb(94, 4, 168);
+font-weight: bold;
+}
